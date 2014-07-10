@@ -3,34 +3,41 @@ Python-tr
 
 This module is a Python implementation of the tr algorithm.
 
+tr(string1, string2, source, option='')
 
 If not given option, then replace all characters in string1 with
 the character in the same position in string2.
 
 Following options are available:
 
-    c   Replace all complemented characters in string1 with
-        the character in the same position in string2.
-    d   Delete all characters in string1.
-    s   Squeeze all characters in string1.
-    cs  Squeeze all the characters in string2 besides "c" replacement.
-    ds  Delete all characters in string1. Squeeze all characters
-        in string2.
-    cd  Delete all complemented characters in string1.
+
+c
+    Replace all complemented characters in string1 with the character in the same position in string2.
+d
+    Delete all characters in string1.
+s
+    Squeeze all characters in string1.
+cs
+    Squeeze all the characters in string2 besides "c" replacement.
+ds
+    Delete all characters in string1. Squeeze all characters in string2.
+cd
+    Delete all complemented characters in string1.
+
 
 Params:
-    <unicode> string1
-    <unicode> string2
-    <unicode> source
-    <basestring> option
+ - <unicode> string1
+ - <unicode> string2
+ - <unicode> source
+ - <basestring> option
 Return:
-    <unicode> translated_source
+ - <unicode> translated_source
 
 
 Note
 ===========
-In Python2.x, the type of paramaters (string1, string2 and source) must be unicode.
-In Python3.3 or later, the type of paramaters (string1, string2 and source) must be str.
+- If Python2.x, the type of paramaters (string1, string2 and source) must be unicode.
+- If Python3.3 or later, the type of paramaters (string1, string2 and source) must be str.
 
 
 Example
@@ -54,7 +61,7 @@ u'brnnr'
 u'uy'
 
 
-Python3.3~
+Python3.3 or later
 
 
 >>> from tr import tr
