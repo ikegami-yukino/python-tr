@@ -1,4 +1,4 @@
-r"""UNIX-like transliteration
+r"""Transliteration algorythm (TR)
 
 This module provides some operations for replacing or removing
 specific characters from source.
@@ -77,7 +77,7 @@ def tr(string1, string2, source, option=''):
         return source.translate(translate_dict)
 
     if not is_valid_type(source):
-        raise TypeError('source string must be unicode')
+        raise TypeError('source must be unicode')
 
     if option == 's':
         from_list = make_char_list(string1)
