@@ -1,5 +1,9 @@
-Python-tr
+python-tr
 =========
+.. image:: https://badge.fury.io/py/python-tr.svg
+    :target: http://badge.fury.io/py/python-tr
+.. image:: https://travis-ci.org/ikegami-yukino/python-tr.svg?branch=master
+    :target: https://travis-ci.org/ikegami-yukino/python-tr
 
 This module is a Python implementation of the tr algorithm.
 
@@ -79,3 +83,6 @@ Python3.3 or later
 'brnnr'
 >>> tr('bn', 'cr', 'bunny', 'ds')
 'uy'
+
+
+Contributions are welcome.
