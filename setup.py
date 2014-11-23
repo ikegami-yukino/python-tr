@@ -19,7 +19,7 @@ setup(
     url='https://github.com/ikegami-yukino/python-tr',
     keywords=['tr', 'transliterate', 'translate'],
     classifiers=[
-        'Development Status :: 3 - Alpha',
+        'Development Status :: 4 - Beta',
         'Intended Audience :: Developers',
         'Intended Audience :: Information Technology',
         'License :: OSI Approved :: MIT License',
@@ -30,7 +30,7 @@ setup(
         'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3.3',
         'Programming Language :: Python :: 3.4',
-        'Topic :: Text Processing'
+        'Topic :: Text Processing :: General'
         ],
     long_description=open('README.rst').read() + '\n\n' + open('CHANGES.rst').read()
 )
