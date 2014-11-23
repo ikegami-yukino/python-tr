@@ -1,18 +1,49 @@
-r"""Transliteration algorythm (TR)
-
-This module provides some operations for replacing or removing
-specific characters from source.
-"""
-
+from .compat import valid_source_type, chr, map, range, zip
 import re
-import sys
 
 
-if sys.version_info < (3, ):  # for Python 2.x
-    valid_source_type = unicode
-    chr = unichr
-else:
-    valid_source_type = str
+def is_valid_type(source):
+    return isinstance(source, valid_source_type)
+
+
+def make_char_list(source):
+    char_list = []
+    back_slash = False
+    hyphen = False
+    for char in source:
+        if char == '\\':
+            if not back_slash:
+                back_slash = True
+                char_list.append(92)
+                continue
+        elif char == '-':
+            if back_slash:  # \-
+                del char_list[-1]
+            else:
+                hyphen = True
+                continue
+        elif hyphen:
+            start = char_list[-1] + 1
+            char_list += range(start, ord(char))
+        char_list.append(ord(char))
+        back_slash = False
+        hyphen = False
+    return char_list
+
+
+def to_unichr(char_list):
+    return map(chr, char_list)
+
+
+def squeeze(from_list, source):
+    for char in from_list:
+        source = re.sub('%s{2,}' % char, char, source)
+    return source
+
+
+def translate(from_list, to_list, source):
+    translate_dict = dict(zip(from_list, to_list))
+    return source.translate(translate_dict)
 
 
 def tr(string1, string2, source, option=''):
@@ -39,43 +70,6 @@ def tr(string1, string2, source, option=''):
     Return:
         <unicode> translated_source
     """
-
-    def is_valid_type(source):
-        return isinstance(source, valid_source_type)
-
-    def make_char_list(source):
-        char_list = []
-        back_slash = False
-        hyphen = False
-        for char in source:
-            if char == '\\':
-                if not back_slash:
-                    back_slash = True
-                    continue
-            elif char == '-' and not back_slash:
-                hyphen = True
-                continue
-            elif hyphen:
-                start = char_list[-1] + 1
-                char_list += range(start, ord(char))
-            char_list.append(ord(char))
-            back_slash = False
-            hyphen = False
-        return char_list
-
-    def to_unichr(char_list):
-        return map(chr, char_list)
-
-    def squeeze(from_list, source):
-        for char in from_list:
-            squeeze_pattern = re.compile('%s{2,}' % char)
-            source = squeeze_pattern.sub(char, source)
-        return source
-
-    def translate(from_list, to_list, source):
-        translate_dict = dict(zip(from_list, to_list))
-        return source.translate(translate_dict)
-
     if not is_valid_type(source):
         raise TypeError('source must be unicode')
 
