@@ -4,6 +4,9 @@ python-tr
     :target: http://badge.fury.io/py/python-tr
 .. image:: https://travis-ci.org/ikegami-yukino/python-tr.svg?branch=master
     :target: https://travis-ci.org/ikegami-yukino/python-tr
+.. image:: https://coveralls.io/repos/ikegami-yukino/python-tr/badge.png
+    :target: https://coveralls.io/r/ikegami-yukino/python-tr
+
 
 This module is a Python implementation of the tr algorithm.
 

@@ -8,3 +8,4 @@ dist/*
 *.swo
 *.un~
 .DS_Store
+.coverage
