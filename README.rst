@@ -47,6 +47,13 @@ Note
 - If Python2.x, the type of paramaters (string1, string2 and source) must be unicode.
 - If Python3.3 or later, the type of paramaters (string1, string2 and source) must be str.
 
+Installation
+==============
+
+::
+
+  pip install python-tr
+
 
 Example
 ===========
