@@ -1,3 +1,4 @@
+from __future__ import unicode_literals
 from .compat import valid_source_type, chr, map, range, zip
 import re
 
