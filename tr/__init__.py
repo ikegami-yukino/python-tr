@@ -6,8 +6,8 @@ This module provides some operations for replacing or removing
 specific characters from source.
 """
 
-VERSION = (0, 1)
-__version__ = '0.1'
+VERSION = (0, 1, 1)
+__version__ = '0.1.1'
 __all__ = ['tr']
 
 tr = tr.tr
