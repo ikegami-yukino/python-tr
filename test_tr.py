@@ -21,7 +21,7 @@ def test_delete():
 
 def test_squeeze():
     assert_equals(tr('a', '', 'aabcaa', 's'), 'abca')
-    assert_equals(tr('a', '', 'aabcaa', 's'), 'abca')
+    assert_equals(tr('$', '', '$$$$a', 's'), '$a')
 
 
 def test_cd():

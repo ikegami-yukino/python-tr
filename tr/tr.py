@@ -38,7 +38,8 @@ def to_unichr(char_list):
 
 def squeeze(from_list, source):
     for char in from_list:
-        source = re.sub('%s{2,}' % char, char, source)
+        pattern = '%s{2,}' % re.escape(char)
+        source = re.sub(pattern, char, source)
     return source
 
 
