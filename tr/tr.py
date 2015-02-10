@@ -74,12 +74,11 @@ def tr(string1, string2, source, option=''):
     if not is_valid_type(source):
         raise TypeError('source must be unicode')
 
+    from_list = make_char_list(string1)
     if option == 's':
-        from_list = make_char_list(string1)
         from_list = to_unichr(from_list)
         return squeeze(from_list, source)
     elif 'c' in option:
-        from_list = make_char_list(string1)
         from_list = to_unichr(from_list)
         from_list = [ord(c) for c in set(source) - set(from_list)]
         if 'd' in option:
@@ -91,7 +90,6 @@ def tr(string1, string2, source, option=''):
             source = squeeze(to_list, source)
         return source
     elif 'd' in option:
-        from_list = make_char_list(string1)
         to_list = [None for i in from_list]
         source = translate(from_list, to_list, source)
         if 's' in option:
@@ -100,7 +98,6 @@ def tr(string1, string2, source, option=''):
             source = squeeze(to_list, source)
         return source
     else:
-        from_list = make_char_list(string1)
         to_list = make_char_list(string2)
         to_list = to_unichr(to_list)
         return translate(from_list, to_list, source)

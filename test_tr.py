@@ -2,7 +2,6 @@
 from __future__ import unicode_literals
 from nose.tools import assert_equals, assert_raises
 from tr import tr
-import sys
 
 
 def test_no_option():
