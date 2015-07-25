@@ -59,41 +59,44 @@ Example
 ===========
 Python2.x
 
->>> from tr import tr
->>> tr(u'bn', u'cr', u'bunny')
-u'curry'
->>> tr(u'n', '', u'bunny', 'd')
-u'buy'
->>> tr(u'n', u'u', u'bunny', 'c')
-u'uunnu'
->>> tr(u'n', u'', u'bunny', 's')
-u'buny'
->>> tr(u'bn', '', u'bunny', 'cd')
-u'bnn'
->>> tr(u'bn', u'cr', u'bunny', 'cs')
-u'brnnr'
->>> tr(u'bn', u'cr', u'bunny', 'ds')
-u'uy'
+.. code:: python
+
+    from tr import tr
+    tr(u'bn', u'cr', u'bunny')
+    # => u'curry'
+    tr(u'n', '', u'bunny', 'd')
+    # => u'buy'
+    tr(u'n', u'u', u'bunny', 'c')
+    # => u'uunnu'
+    tr(u'n', u'', u'bunny', 's')
+    # => u'buny'
+    tr(u'bn', '', u'bunny', 'cd')
+    # => u'bnn'
+    tr(u'bn', u'cr', u'bunny', 'cs')
+    # => u'brnnr'
+    tr(u'bn', u'cr', u'bunny', 'ds')
+    # => u'uy'
 
 
 Python3.3 or later
 
+.. code:: python
 
->>> from tr import tr
->>> tr('bn', 'cr', 'bunny')
-'curry'
->>> tr('n', '', 'bunny', 'd')
-'buy'
->>> tr('n', 'u', 'bunny', 'c')
-'uunnu'
->>> tr('n', '', 'bunny', 's')
-'buny'
->>> tr('bn', '', 'bunny', 'cd')
-'bnn'
->>> tr('bn', 'cr', 'bunny', 'cs')
-'brnnr'
->>> tr('bn', 'cr', 'bunny', 'ds')
-'uy'
+    from tr import tr
+    tr('bn', 'cr', 'bunny')
+    # => 'curry'
+    tr('n', '', 'bunny', 'd')
+    # => 'buy'
+    tr('n', 'u', 'bunny', 'c')
+    # => 'uunnu'
+    tr('n', '', 'bunny', 's')
+    # => 'buny'
+    tr('bn', '', 'bunny', 'cd')
+    # => 'bnn'
+    tr('bn', 'cr', 'bunny', 'cs')
+    # => 'brnnr'
+    tr('bn', 'cr', 'bunny', 'ds')
+    # => 'uy'
 
 
 Contributions are welcome.
