@@ -98,6 +98,10 @@ Contributions are welcome.
     :target: https://travis-ci.org/ikegami-yukino/python-tr
     :alt: travis-ci.org
 
+.. |coveralls| image:: https://coveralls.io/repos/ikegami-yukino/python-tr/badge.svg?branch=master&service=github
+    :target: https://coveralls.io/github/ikegami-yukino/python-tr?branch=master
+    :alt: coveralls.io
+
 .. |climate| image:: https://codeclimate.com/repos/561aaa52e30ba058c80016ee/badges/172e1d67a97ef12136ec/gpa.svg
    :target: https://codeclimate.com/repos/561aaa52e30ba058c80016ee/feed
    :alt: Code Climate
