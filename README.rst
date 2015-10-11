@@ -1,12 +1,7 @@
 python-tr
 ==========
 
-.. image:: https://badge.fury.io/py/python-tr.svg
-    :target: http://badge.fury.io/py/python-tr
-.. image:: https://travis-ci.org/ikegami-yukino/python-tr.svg?branch=master
-    :target: https://travis-ci.org/ikegami-yukino/python-tr
-.. image:: https://coveralls.io/repos/ikegami-yukino/python-tr/badge.png
-    :target: https://coveralls.io/r/ikegami-yukino/python-tr
+|travis| |climate| |downloads| |version| |license|
 
 
 This module is a Python implementation of the tr algorithm.
@@ -97,3 +92,25 @@ Python3.3 or later
 
 
 Contributions are welcome.
+
+
+.. |travis| image:: https://travis-ci.org/ikegami-yukino/python-tr.svg?branch=master
+    :target: https://travis-ci.org/ikegami-yukino/python-tr
+    :alt: travis-ci.org
+
+.. |climate| image:: https://codeclimate.com/repos/561aaa52e30ba058c80016ee/badges/172e1d67a97ef12136ec/gpa.svg
+   :target: https://codeclimate.com/repos/561aaa52e30ba058c80016ee/feed
+   :alt: Code Climate
+
+.. |downloads| image:: https://img.shields.io/pypi/dm/python-tr.svg
+    :target: http://pypi.python.org/pypi/python-tr/
+    :alt: downloads
+
+.. |version| image:: https://img.shields.io/pypi/v/python-tr.svg
+    :target: http://pypi.python.org/pypi/python-tr/
+    :alt: latest version
+
+.. |license| image:: https://img.shields.io/pypi/l/python-tr.svg
+    :target: http://pypi.python.org/pypi/python-tr/
+    :alt: license
+
