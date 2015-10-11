@@ -1,7 +1,7 @@
 python-tr
 ==========
 
-|travis| |climate| |downloads| |version| |license|
+|travis| |coveralls| |climate| |downloads| |version| |license|
 
 
 This module is a Python implementation of the tr algorithm.
