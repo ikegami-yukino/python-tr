@@ -100,5 +100,8 @@ def tr(string1, string2, source, option=''):
         return source
     else:
         to_list = make_char_list(string2)
+        length_diff = (len(from_list) - len(to_list))
+        if length_diff:
+            to_list += [to_list[-1]] * length_diff
         to_list = to_unichr(to_list)
         return translate(from_list, to_list, source)
