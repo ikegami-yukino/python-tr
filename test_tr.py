@@ -10,7 +10,6 @@ def test_no_option():
     assert_equals(tr('a\-b', 'cde', 'a-b'), 'cde')
     assert_equals(tr('1-9', 'A-I', '8429503671'), 'HDBIE0CFGA')
     assert_equals(tr('1-9', 'ABC#', '8429503671'), '##B##0C##A')
-    assert_equals(tr('^1-9', '@', '8429503671'), '84295@3671')
 
 def test_complement():
     assert_equals(tr('ab', '\-', '123', 'c'), '---')
