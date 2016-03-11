@@ -1,6 +1,14 @@
 CHANGES
 =======
 
+0.1.2 (2016-03-11)
+------------------
+
+- Fix transliteration bugs in no option bug
+
+This bug is reported by id774.
+Many thanks.
+
 0.1.1 (2015-02-11)
 ------------------
 
