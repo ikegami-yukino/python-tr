@@ -15,7 +15,7 @@ setup(
     platforms=['POSIX', 'Windows', 'Unix', 'MacOS'],
     description='A Pure-Python implementation of the tr algorithm',
     author='Yukino Ikegami',
-    author_email='yukino0131@me.com',
+    author_email='yknikgm@gmail.com',
     url='https://github.com/ikegami-yukino/python-tr',
     keywords=['tr', 'transliterate', 'translate'],
     classifiers=[
