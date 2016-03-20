@@ -1,7 +1,7 @@
 python-tr
 ==========
 
-|travis| |coveralls| |downloads| |version| |license|
+|travis| |coveralls| |downloads| |pyversion| |version| |landscape| |license|
 
 
 This module is a Python implementation of the tr algorithm.
@@ -112,6 +112,12 @@ Contributions are welcome.
 .. |version| image:: https://img.shields.io/pypi/v/python-tr.svg
     :target: http://pypi.python.org/pypi/python-tr/
     :alt: latest version
+
+.. |pyversion| image:: https://img.shields.io/pypi/pyversions/python-tr.svg
+
+.. |landscape| image:: https://landscape.io/github/ikegami-yukino/python-tr/master/landscape.svg?style=flat
+   :target: https://landscape.io/github/ikegami-yukino/python-tr/master
+   :alt: Code Health
 
 .. |license| image:: https://img.shields.io/pypi/l/python-tr.svg
     :target: http://pypi.python.org/pypi/python-tr/
