@@ -1,7 +1,7 @@
 python-tr
 ==========
 
-|travis| |coveralls| |downloads| |pyversion| |version| |landscape| |license|
+|travis| |coveralls| |pyversion| |version| |landscape| |license|
 
 
 This module is a Python implementation of the tr algorithm.
@@ -104,10 +104,6 @@ Contributions are welcome.
 .. |coveralls| image:: https://coveralls.io/repos/ikegami-yukino/python-tr/badge.svg?branch=master&service=github
     :target: https://coveralls.io/github/ikegami-yukino/python-tr?branch=master
     :alt: coveralls.io
-
-.. |downloads| image:: https://img.shields.io/pypi/dm/python-tr.svg
-    :target: http://pypi.python.org/pypi/python-tr/
-    :alt: downloads
 
 .. |version| image:: https://img.shields.io/pypi/v/python-tr.svg
     :target: http://pypi.python.org/pypi/python-tr/
